@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Friend Finder</title>
+	<title>Friend Finder | SURVEY</title>
 
 	<!-- RESET CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -11,6 +11,9 @@
 
 	<!-- GOOGLE FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+	<!-- FONT AWESOME -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	<!-- UNIQUE STYLESHEET -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -28,8 +31,189 @@
 <body>
 
 	<div class="container">
-		<br>
+		<div id="header" class="row text-center">
+			<h1><i class="fa fa-facebook-square" aria-hidden="true"></i> facebook friend finder</h1>
+		</div>
+
+		<div id="survey" class="row text-center">
+
+			<form id="form-style" class="form-horizontal" role="form" id="myForm">
+				<h2>About You</h2>
+
+				<div class="form-group">
+			    <label for="name" class="col-sm-2 control-label">NAME (required)</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" id="name" placeholder="Full Name">
+			    </div>
+			  </div>
+
+			  <div class="form-group">
+			    <label for="photo" class="col-sm-2 control-label">PHOTO LINK (required)</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" id="photo" placeholder="Link to Photo">
+			    </div>
+			  </div>
+
+			  <hr>
+			  <h2>Survey Questions</h2>
+				<br>
+				<div class="text-left">
+
+			  <div class="form-group">
+					<label for="question1">1 - YOUR MIND IS ALWAYS BUZZING WITH UNEXPLORED IDEAS AND PLANS.</label>
+					<select  class="form-control" name="question1" id="question1">
+						<option>Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+					  <option value="2">2 (Disagree)</option>
+					  <option value="3">3 (Kinda/Sorta/Maybe)</option>
+					  <option value="4">4 (Agree)</option>
+					  <option value="5">5 (Strongly Agree)</option>
+					</select>
+				</div>
+			
+				<br>
+
+				<div class="form-group">
+					<label for="question2">2 - GENERALLY SPEAKING, YOU RELY MORE ON YOUR EXPERIENCE THAN YOUR IMAGINATION.</label>
+					<select  class="form-control" name="question2" id="question2">
+						<option>Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+					  <option value="2">2 (Disagree)</option>
+					  <option value="3">3 (Kinda/Sorta/Maybe)</option>
+					  <option value="4">4 (Agree)</option>
+					  <option value="5">5 (Strongly Agree)</option>
+					</select>
+				</div>
+
+				<br>
+
+				<div class="form-group">
+					<label for="question3">3 - YOU FIND IT EASY TO STAY RELAXED AND FOCUSED EVEN WHEN THERE IS SOME PRESSURE.</label>
+					<select  class="form-control" name="question3" id="question3">
+						<option>Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+					  <option value="2">2 (Disagree)</option>
+					  <option value="3">3 (Kinda/Sorta/Maybe)</option>
+					  <option value="4">4 (Agree)</option>
+					  <option value="5">5 (Strongly Agree)</option>
+					</select>
+				</div>
+
+				<br>
+
+				<div class="form-group">
+					<label for="question4">4 - YOU RARELY DO SOMETHING JUST OUT OF SHEER CURIOSITY.</label>
+					<select  class="form-control" name="question4" id="question4">
+						<option>Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+					  <option value="2">2 (Disagree)</option>
+					  <option value="3">3 (Kinda/Sorta/Maybe)</option>
+					  <option value="4">4 (Agree)</option>
+					  <option value="5">5 (Strongly Agree)</option>
+					</select>
+				</div>
+
+				<br>
+
+				<div class="form-group">
+					<label for="question1">5 - PEOPLE CAN RARELY UPSET YOU.</label>
+					<select  class="form-control" name="question5" id="question5">
+						<option>Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+					  <option value="2">2 (Disagree)</option>
+					  <option value="3">3 (Kinda/Sorta/Maybe)</option>
+					  <option value="4">4 (Agree)</option>
+					  <option value="5">5 (Strongly Agree)</option>
+					</select>
+				</div>
+
+				<br>
+
+				<div class="form-group">
+					<label for="question1">6 - IT IS OFTEN DIFFICULT FOR YOU TO RELATE TO OTHER PEOPLE'S FEELINGS.</label>
+					<select  class="form-control" name="question6" id="question6">
+						<option>Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+					  <option value="2">2 (Disagree)</option>
+					  <option value="3">3 (Kinda/Sorta/Maybe)</option>
+					  <option value="4">4 (Agree)</option>
+					  <option value="5">5 (Strongly Agree)</option>
+					</select>
+				</div>
+
+				<br>
+
+				<div class="form-group">
+					<label for="question7">7 - IN A DISCUSSION, TRUTH SHOULD BE MORE IMPORTANT THAN PEOPLE'S SENSITIVITIES.</label>
+					<select  class="form-control" name="question7" id="question7">
+						<option>Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+					  <option value="2">2 (Disagree)</option>
+					  <option value="3">3 (Kinda/Sorta/Maybe)</option>
+					  <option value="4">4 (Agree)</option>
+					  <option value="5">5 (Strongly Agree)</option>
+					</select>
+				</div>
+
+				<br>
+
+				<div class="form-group">
+					<label for="question8">8 - YOU RARELY GET CARRIED AWAY BY FANTASIES AND IDEAS.</label>
+					<select  class="form-control" name="question8" id="question8">
+						<option>Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+					  <option value="2">2 (Disagree)</option>
+					  <option value="3">3 (Kinda/Sorta/Maybe)</option>
+					  <option value="4">4 (Agree)</option>
+					  <option value="5">5 (Strongly Agree)</option>
+					</select>
+				</div>
+
+				<br>
+
+				<div class="form-group">
+					<label for="question9">9 - YOU THINK THAT EVERYONE'S VIEWS SHOULD BE RESPECTED REGARDLESS OF WHETHER THEY ARE SUPPORTED BY FACTS OR NOT.</label>
+					<select  class="form-control" name="question9" id="question9">
+						<option>Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+					  <option value="2">2 (Disagree)</option>
+					  <option value="3">3 (Kinda/Sorta/Maybe)</option>
+					  <option value="4">4 (Agree)</option>
+					  <option value="5">5 (Strongly Agree)</option>
+					</select>
+				</div>
+
+				<br>
+
+				<div class="form-group">
+					<label for="question10">10 - YOU FEEL MORE ENERGETIC AFTER SPENDING TIME WITH A GROUP OF PEOPLE.</label>
+					<select  class="form-control" name="question10" id="question10">
+						<option>Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+					  <option value="2">2 (Disagree)</option>
+					  <option value="3">3 (Kinda/Sorta/Maybe)</option>
+					  <option value="4">4 (Agree)</option>
+					  <option value="5">5 (Strongly Agree)</option>
+					</select>
+				</div>
+
+				<br>
+
+				<button type="submit" class="submit btn btn-danger btn-lg btn-block"><h6>SUBMIT</h6></button>
+
+
+
+
+				
+				</div>
+
+
+			</form>
+		</div>
 		
+		<div class="row">
+			<p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/Jerling1989/FriendFinder">GitHub Repo</a></p>
+		</div>
 		
 	</div>
 
